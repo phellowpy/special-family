@@ -1,0 +1,38 @@
+usuario
+
+nome = 'Maria_Silva
+CPF = '123.456.789-00'
+Senha = 'SenhaSegura123#'
+Telefone = '(11) 98765-4321'
+Endereço = 'Rua das Flores,_123'
+
+
+profissionais
+
+nome = 'Ana_Paula_Rodrigues'
+Especialização = 'Terapia_cognitivo_comportamental'
+Tempo de sessão = 'Ana_Paula_Rodrigues'
+telefone = '(41)93154-7531'
+
+
+necessidades especiais/criança
+
+necessidade = 'TDAH'
+causa = 'fatores_geneticos'
+sintomas = 'desatentacao'
+tratamento = 'terapia_comportamental'
+diagnostico = 'psicologos'
+
+
+blog
+
+nome = Rafael_da_Silva'
+necessidade especial = 'autismo'
+comentário = 'meu filho tem autismo'
+
+
+doação
+
+nome = 'Joice_Lira'
+conta = '4786.5479.2123.1334'
+valor = '50_reais'
