@@ -6,9 +6,9 @@ blabla
 
 </div>
 
-## Banco de dados  <img src="#logo" wight="20px" height="20px">
+## Banco de dados/back  <img src="#logo" wight="20px" height="20px">
 <div style="font-size: 18px;">
-Nosso banco de dados foi feito na proposta de atender as familias da forma mais rapida e melhor, neles contemos diagramas e variaveis.
+Nosso banco de dados e back foi feito na proposta de atender as familias da forma mais rapida e melhor, neles contemos diagramas e variaveis.
 
 </div>
 <br>
