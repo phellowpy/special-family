@@ -2,7 +2,9 @@
 
 ## Proposta  <img src="#logo" wight="20px" height="20px">
 <div style="font-size: 18px;">
-blabla
+O Special Family tem como objetivo ajudar famílias de crianças atípicas.Crianças neurodivergentes recebem apoio como fisioterapia, fonoaudiologia, terapia e vários outros. Mas e os pais? Os irmãos? Os avôs? Todos merecem apoio!
+O nosso site disponibiliza apoio como informações sobre o transtorno, dicas do dia a dia, quais os direitos das crianças/famílias atípicas, livros e artigos com informações, ajuda com o desenvolvimento, uma comunidade de pais, psicólogos disponíveis para ajudar, entre outras. Queremos oferecer o apoio que essas pessoas precisam e que não conseguem achar com facilidade!
+
 
 </div>
 
