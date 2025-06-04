@@ -23,16 +23,23 @@ def mostrar(posts_filtrados):
     if not posts_filtrados:
         print("\nNenhum post encontrado.")
     else:
-        print(f"\n{len(posts_filtrados)} post(s):")
+        print(f"\n{len(posts_filtrados)} post(s) encontrado(s):")
         for i, post in enumerate(posts_filtrados, 1):
             print(f"\n{i}. {post['nome']}\n{post['texto']}\nCategoria: {post['categoria']}\n{'─'*50}")
 
 print("Filtro de Posts sobre Neurodivergência")
 print("Categorias: educação, terapeutico, debate, profissionais, pais")
+print(f"\nDigite 'sair' para encerrar o programa")
 
 while True:
-    categoria = input("\nDigite uma categoria: ").lower()
+    categoria = input("\nDigite uma categoria ou digite: ").strip().lower()
+    
+    if categoria == 'sair':
+        print("\nEncerrando o programa...")
+        break
+    
     if categoria not in ['educação', 'terapeutico', 'debate', 'profissionais', 'pais']:
         print("Categoria inválida. Por favor, escolha entre: educação, terapeutico, debate, profissionais, pais")
         continue
+    
     mostrar(filtrar_posts(categoria))
