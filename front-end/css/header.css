@@ -21,7 +21,7 @@
 
 /* Estilos do Logo */
 .header-logo .logo-image {
-    height: 70spx; /* Altura do logo */
+    height: 70px; /* Altura do logo */
     width: auto; /* Mantém a proporção */
     display: block; /* Remove espaço extra abaixo da imagem */
 }
