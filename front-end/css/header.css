@@ -1,0 +1,142 @@
+/* Importação de fontes (opcional, se você quiser usar uma fonte específica como Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Usando Poppins ou uma fonte genérica sans-serif */
+    background-color: #f4f4f4; /* Cor de fundo da página para contraste */
+}
+
+/* Estilos do Cabeçalho Principal */
+.main-header {
+    background-color: #046393; /* Cor de fundo principal do cabeçalho */
+    display: flex;
+    justify-content: space-between; /* Espalha os itens: grupo da esquerda e botões da direita */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 0 40px; /* Preenchimento horizontal nas laterais */
+    height: 80px; /* Altura fixa do cabeçalho */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sutil sombra abaixo do cabeçalho */
+}
+
+/* NOVO ESTILO: Grupo da esquerda (Logo + Navegação) */
+.header-left-group {
+    display: flex;
+    align-items: center;
+    gap: 80px; /* Espaço entre o logo e o primeiro item de navegação (PROBLEMAS) */
+}
+
+
+/* Estilos do Logo */
+.header-logo .logo-image {
+    height: 70spx; /* Altura do logo */
+    width: auto; /* Mantém a proporção */
+    display: block; /* Remove espaço extra abaixo da imagem */
+}
+
+/* Estilos da Navegação */
+.header-nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    display: flex; /* Transforma a lista em flex container para itens lado a lado */
+    gap: 40px; /* Espaço entre os itens da navegação */
+}
+
+.header-nav .nav-item a {
+    color: #FFFFFF; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: 600; /* Peso da fonte (semi-bold) */
+    font-size: 1rem; /* Tamanho da fonte */
+    display: flex; /* Permite alinhar o texto */
+    align-items: center; /* Alinha o texto verticalmente */
+}
+
+/* Estilos dos Botões de Ação */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre os botões */
+}
+
+.action-button {
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: 600; /* Semi-bold */
+    font-size: 0.95rem; /* Tamanho da fonte */
+    padding: 10px 20px; /* Preenchimento interno dos botões */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+}
+
+.login-button {
+    color: #FFFFFF; /* Cor do texto para o botão LOGIN */
+    padding: 0; /* Garante que não há padding extra, sendo apenas texto */
+}
+
+.register-button {
+    background-color: #050e4b; /* Cor de fundo do botão CADASTRE-SE (azul muito escuro) */
+    color: #FFFFFF; /* Cor do texto do botão CADASTRE-SE */
+    border: none; /* Remove a borda padrão do botão */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil para destacar */
+}
+
+/* Media Queries para Responsividade (Opcional, mas recomendado para cabeçalhos) */
+@media (max-width: 768px) {
+    .main-header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    .header-left-group { /* Ajuste para o grupo em telas menores */
+        width: 100%;
+        justify-content: center; /* Centraliza o logo e a nav quando quebra de linha */
+        flex-wrap: wrap; /* Permite que o logo e a nav quebrem linha entre si */
+        gap: 20px; /* Reduz o gap em telas menores */
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .header-logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0; /* Removido, pois o gap do grupo já gerencia */
+    }
+
+    /* Ajustes de ordem para responsividade, se necessário (pode variar dependendo do layout desejado) */
+    .header-left-group {
+        order: 1;
+    }
+    .header-actions {
+        order: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header {
+        padding: 10px 15px;
+    }
+
+    .header-nav ul {
+        gap: 8px;
+    }
+
+    .action-button {
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
+}
