@@ -1,17 +1,4 @@
-/* Importação de fontes (opcional, se você quiser usar uma fonte específica como Poppins) */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/* Reset Básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif; /* Usando Poppins ou uma fonte genérica sans-serif */
-    background-color: #f4f4f4; /* Cor de fundo da página para contraste */
-}
 
 /* Estilos do Cabeçalho Principal */
 .main-header {
