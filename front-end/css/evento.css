@@ -1,0 +1,434 @@
+/* Estilos Gerais do Corpo (mínimo para o contexto do cabeçalho) */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f2f5; /* Cor de fundo suave para a página */
+}
+
+/* Estilos do Cabeçalho */
+.cabecalho-principal {
+    background-color: #046393; /* Azul escuro da imagem */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Preenchimento ajustado para combinar com a imagem */
+    height: 80px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grupo-esquerda-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Espaçamento ajustado para combinar com a imagem */
+}
+
+.logo-cabecalho .imagem-logo {
+    height: 60px; /* Tamanho do logo ajustado para combinar com a imagem */
+    width: auto;
+    display: block;
+}
+
+.navegacao-cabecalho ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 25px; /* Espaçamento entre os itens de navegação */
+}
+
+.navegacao-cabecalho .item-navegacao a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 400; /* Peso da fonte mais leve para os itens de navegação */
+    font-size: 0.9rem; /* Tamanho da fonte menor para os itens de navegação */
+    padding: 5px 0; /* Preenchimento vertical para área de clique */
+    transition: color 0.3s ease;
+}
+
+.navegacao-cabecalho .item-navegacao a:hover {
+    color: #d1eaff; /* Azul mais claro ao passar o mouse */
+}
+
+.acoes-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os ícones */
+}
+
+.icone-acao {
+    color: #FFFFFF;
+    font-size: 1.4rem; /* Tamanho do ícone */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icone-acao:hover {
+    color: #d1eaff; /* Azul mais claro ao passar o mouse */
+}
+
+/* Ajustes de responsividade para o cabeçalho */
+@media (max-width: 768px) {
+    .cabecalho-principal {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px 20px;
+    }
+
+    .grupo-esquerda-cabecalho {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .navegacao-cabecalho ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .acoes-cabecalho {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .logo-cabecalho {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho-principal {
+        padding: 10px 15px;
+    }
+
+    .navegacao-cabecalho ul {
+        gap: 8px;
+    }
+
+    .icone-acao {
+        font-size: 1.2rem;
+    }
+}
+
+/* Estilos da Seção Principal de Conteúdo */
+.conteudo-principal {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.titulo-secao {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center; /* Centraliza o título */
+    font-weight: 600;
+}
+
+.area-eventos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha em telas menores */
+    align-items: flex-start; /* Alinha o filtro e os cartões no topo */
+}
+
+/* Estilos do Filtro Lateral */
+.filtro-lateral {
+    background-color: #006494;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 280px; /* Largura mínima do filtro */
+    flex-shrink: 0; /* Impede que o filtro encolha */
+    flex-grow: 0;
+}
+
+.grupo-filtro {
+    margin-bottom: 20px;
+}
+
+.label-filtro {
+    display: block;
+    font-weight: 600;
+    color: #000000; /* Cor do texto do label para preto */
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.campo-busca,
+.campo-data {
+    width: calc(100% - 20px); /* Ajusta a largura para o padding */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #000000; /* Força o texto digitado a ser preto */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+}
+
+.campo-busca::placeholder,
+.campo-data::placeholder {
+    color: #333; /* Cor do placeholder */
+}
+
+.entrada-com-icone {
+    position: relative;
+}
+
+/* ALTERADO: Padding-left para o campo de busca e remoção do padding-right */
+.entrada-com-icone .campo-busca {
+    padding-left: 40px; /* Espaço para o ícone à esquerda */
+    padding-right: 10px; /* Ajusta o padding direito se necessário, ou remove se já houver um padrão */
+}
+
+/* ALTERADO: Posição do ícone para a esquerda */
+.icone-dentro-input {
+    position: absolute;
+    left: 15px; /* Move o ícone para a esquerda */
+    right: auto; /* Remove a propriedade right */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000; /* Cor do ícone dentro do input para preto */
+}
+
+/* Estilo para Checkboxes Personalizados */
+.opcoes-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 28px; /* Espaço para o checkbox customizado */
+    margin-bottom: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #000000; /* Cor do texto do checkbox para preto */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #046393; /* Cor de preenchimento quando marcado */
+    border-color: #046393;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* Estilos da Lista de Eventos */
+.lista-eventos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas flexíveis */
+    gap: 25px;
+    flex-grow: 1; /* Permite que a lista de eventos ocupe o espaço restante */
+}
+
+/* Estilos do Cartão de Evento */
+.cartao-evento {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Garante que a imagem não vaze */
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-cartao-evento {
+    background-color: #f7f7f7;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.perfil-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.foto-perfil-pequena {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.nome-profissional {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #444; /* Cor original para o nome, pode ser ajustada se necessário */
+}
+
+.imagem-cartao-evento {
+    width: 100%;
+    height: 180px; /* Altura fixa para as imagens dos eventos */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    display: block;
+}
+
+.conteudo-cartao-evento {
+    padding: 15px;
+    flex-grow: 1; /* Permite que o conteúdo ocupe o espaço restante */
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-evento {
+    font-size: 1.1rem;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.detalhe-evento {
+    font-size: 0.85rem;
+    color: #666; /* Cor padrão para os detalhes do evento */
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+.destaque-info-evento {
+    color: #000000; /* Cor preta */
+    font-weight: 700; /* Garante o negrito */
+}
+
+.inscricao-gratuita {
+    font-weight: 600;
+    color: #046393; /* Cor para "Inscrição gratuita" */
+}
+
+.tags-evento {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background-color: #046393; /* Azul do cabeçalho */
+    color: #FFFFFF; /* Texto branco */
+    padding: 5px 10px;
+    border-radius: 0; /* As tags são quadradas */
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.botao-saiba-mais {
+    background-color: #02084b; /* Nova cor azul escuro */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px; /* De volta a 5px para um leve oval */
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Alinha o botão à esquerda dentro do flex container */
+    margin-top: auto; /* Empurra o botão para o final do cartão */
+}
+
+.botao-saiba-mais:hover {
+    background-color: #010530; /* Um pouco mais escuro no hover */
+}
+
+/* Responsividade para a seção de eventos */
+@media (max-width: 1024px) {
+    .area-eventos {
+        flex-direction: column; /* Empilha o filtro e os cartões */
+        align-items: center; /* Centraliza ambos */
+    }
+
+    .filtro-lateral {
+        width: 100%;
+        max-width: 400px; /* Largura máxima para o filtro em telas menores */
+    }
+
+    .lista-eventos {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        width: 100%;
+    }
+
+    .cartao-evento {
+        max-width: 350px; /* Largura máxima para cartões em telas menores */
+        margin: 0 auto; /* Centraliza os cartões */
+    }
+}
+
+@media (max-width: 600px) {
+    .conteudo-principal {
+        padding: 0 15px;
+    }
+
+    .titulo-secao {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .filtro-lateral {
+        padding: 15px;
+    }
+
+    .lista-eventos {
+        grid-template-columns: 1fr; /* Uma única coluna em telas muito pequenas */
+    }
+
+    .cartao-evento {
+        width: 100%; /* Cartão ocupa toda a largura disponível */
+    }
+}
