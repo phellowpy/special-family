@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="evento.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="cabecalho-principal">
+        <div class="grupo-esquerda-cabecalho">
+            <div class="logo-cabecalho">
+                <img src="c:\Users\guima\Downloads\logo_special.png" alt="Logo da Empresa" class="imagem-logo">
+            </div>
+            <nav class="navegacao-cabecalho">
+                <ul>
+                    <li class="item-navegacao">
+                        <a href="#apoie">APOIE</a>
+                    </li>
+                    <li class="item-navegacao">
+                        <a href="#eventos">EVENTOS</a>
+                    </li>
+                    <li class="item-navegacao">
+                        <a href="#neurodivergencias">NEURODIVERGÊNCIAS</a>
+                    </li>
+                    <li class="item-navegacao">
+                        <a href="#recursos">RECURSOS</a>
+                    </li>
+                    <li class="item-navegacao">
+                        <a href="#comunidades">COMUNIDADES</a>
+                    </li>
+                    <li class="item-navegacao">
+                        <a href="#profissional">PROFISSIONAL</a>
+                    </li>
+                    <li class="item-navegacao">
+                        <a href="#noticias">NOTÍCIAS</a>
+                    </li>
+                    <li class="item-navegacao">
+                        <a href="#vulnerabilidades">VULNERABILIDADES</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="acoes-cabecalho">
+            <a href="#pesquisa" class="icone-acao"><i class="fas fa-search"></i></a>
+            <a href="#notificacao" class="icone-acao"><i class="fas fa-bell"></i></a>
+            <a href="#usuario" class="icone-acao"><i class="fas fa-user-circle"></i></a>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+        <h1 class="titulo-secao">Recomendações/Em Alta</h1>
+
+        <div class="area-eventos">
+            <aside class="filtro-lateral">
+                <div class="grupo-filtro">
+                    <label for="busca-palavra-chave" class="label-filtro">Busca por palavra-chave</label>
+                    <div class="entrada-com-icone">
+                        <input type="text" id="busca-palavra-chave" class="campo-busca" placeholder="">
+                        <i class="fas fa-search icone-dentro-input"></i>
+                    </div>
+                </div>
+
+                <div class="grupo-filtro">
+                    <span class="label-filtro">Tipo de evento:</span>
+                    <div class="opcoes-checkbox">
+                        <label class="checkbox-container">Palestra
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">Oficina
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">Encontro
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="grupo-filtro">
+                    <span class="label-filtro">Público:</span>
+                    <div class="opcoes-checkbox">
+                        <label class="checkbox-container">Pais
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">Educadores
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="checkbox-container">Profissionais
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="grupo-filtro">
+                    <label for="filtro-data" class="label-filtro">Filtro por data:</label>
+                    <input type="text" id="filtro-data" class="campo-data" placeholder="DD/MM">
+                </div>
+
+                <div class="grupo-filtro">
+                    <label for="cidade-local" class="label-filtro">Cidade/Local</label>
+                    <div class="entrada-com-icone">
+                        <input type="text" id="cidade-local" class="campo-busca" placeholder="">
+                        <i class="fas fa-search icone-dentro-input"></i>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="lista-eventos">
+                <article class="cartao-evento">
+                    <div class="cabecalho-cartao-evento">
+                        <div class="perfil-info">
+                            <img src="https://static-cse.canva.com/blob/759723/DrobotDeanCanva.jpg" alt="Foto de Perfil" class="foto-perfil-pequena">
+                            <span class="nome-profissional">Nome </span><span class="tag">Profissional</span>
+                        </div>
+                    </div>
+                    <img src="https://static-cse.canva.com/blob/759723/DrobotDeanCanva.jpg" alt="Capa do Evento: Os Caminhos até o Diagnóstico" class="imagem-cartao-evento">
+                    <div class="conteudo-cartao-evento">
+                        <h3 class="titulo-evento">OS CAMINHOS ATÉ O DIAGNÓSTICO</h3>
+                        <p class="detalhe-evento">Data: 10/06/2025 horário: 14h às 17h</p>
+                        <p class="detalhe-evento">Local: Centro Cultural Inclusivo - Rua das Flores, 120 - São Paulo/SP</p>
+                        <p class="detalhe-evento">Palestrante: Dra. Larissa Cunha - Psicóloga especializada em TEA</p>
+                        <p class="detalhe-evento">Número participantes: 50 <span class="inscricao-gratuita">Inscrição gratuita</span></p>
+                        <div class="tags-evento">
+                            <span class="tag">Tag</span>
+                            <span class="tag">Tag</span>
+                            <span class="tag">Tag</span>
+                            <span class="tag">Tag</span>
+                        </div>
+                        <button class="botao-saiba-mais">Saiba mais</button>
+                    </div>
+                </article>
+
+                <article class="cartao-evento">
+                    <div class="cabecalho-cartao-evento">
+                        <div class="perfil-info">
+                            <img src="https://static-cse.canva.com/blob/759723/DrobotDeanCanva.jpg" alt="Foto de Perfil" class="foto-perfil-pequena">
+                            <span class="nome-profissional">Nome </span><span class="tag">Profissional</span>
+                        </div>
+                    </div>
+                    <img src="https://static-cse.canva.com/blob/759723/DrobotDeanCanva.jpg" alt="Capa do Evento: Compreendendo o Autismo na Infância" class="imagem-cartao-evento">
+                    <div class="conteudo-cartao-evento">
+                        <h3 class="titulo-evento">COMPREENDENDO O AUTISMO NA INFÂNCIA</h3>
+                        <p class="detalhe-evento">Data: 10/06/2025 horário: 14h às 17h</p>
+                        <p class="detalhe-evento">Local: Centro Cultural Inclusivo - Rua das Flores, 120 - São Paulo/SP</p>
+                        <p class="detalhe-evento">Palestrante: Dra. Larissa Cunha - Psicóloga especializada em TEA</p>
+                        <p class="detalhe-evento">Número participantes: 50 <span class="inscricao-gratuita">Inscrição gratuita</span></p>
+                        <div class="tags-evento">
+                            <span class="tag">Tag</span>
+                            <span class="tag">Tag</span>
+                            <span class="tag">Tag</span>
+                            <span class="tag">Tag</span>
+                        </div>
+                        <button class="botao-saiba-mais">Saiba mais</button>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
