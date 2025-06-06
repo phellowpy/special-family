@@ -1,4 +1,4 @@
-posts = [
+comunidade = [
     {"nome": "Entendendo o diagnóstico do seu filho", "texto": "Orientações sobre como entender relatórios médicos e psicológicos.", "categoria": "pais"},
     {"nome": "Estratégias educacionais para autistas", "texto": "Métodos de ensino adaptados para crianças no espectro autista.", "categoria": "educação"},
     {"nome": "Terapias complementares para TDAH", "texto": "Abordagens terapêuticas para desenvolvimento de crianças com TDAH.", "categoria": "terapeutico"},
@@ -16,23 +16,23 @@ posts = [
     {"nome": "Preparando para consultas", "texto": "Como preparar crianças neurodivergentes para consultas médicas.", "categoria": "pais"}
 ]
 
-def filtrar_posts(categoria):
-    return [post for post in posts if post["categoria"] == categoria.lower()]
+def filtrar_comunidade(categoria):
+    return [comunidade for comunidade in comunidade if comunidade["categoria"] == categoria.lower()]
 
-def mostrar(posts_filtrados):
-    if not posts_filtrados:
-        print("\nNenhum post encontrado.")
+def mostrar(comunidades_filtradas):
+    if not comunidades_filtradas:
+        print("\nNenhuma comunidade encontrada.")
     else:
-        print(f"\n{len(posts_filtrados)} post(s) encontrado(s):")
-        for i, post in enumerate(posts_filtrados, 1):
-            print(f"\n{i}. {post['nome']}\n{post['texto']}\nCategoria: {post['categoria']}\n{'─'*50}")
+        print(f"\n{len(comunidades_filtradas)} comunidade(s) encontrada(s):")
+        for i, comunidade in enumerate(comunidades_filtradas, 1):
+            print(f"\n{i}. {comunidade['nome']}\n{comunidade['texto']}\nCategoria: {comunidade['categoria']}\n{'─'*50}")
 
-print("Filtro de Posts sobre Neurodivergência")
-print("Categorias: educação, terapeutico, debate, profissionais, pais")
-print(f"\nDigite 'sair' para encerrar o programa")
+print("Filtro de Comunidades")
+print(f"\nCategorias: educação, terapeutico, debate, profissionais, pais")
+print(f"Digite 'sair' para encerrar o programa")
 
 while True:
-    categoria = input("\nDigite uma categoria ou digite: ").strip().lower()
+    categoria = input("\nDigite uma categoria: ").strip().lower()
     
     if categoria == 'sair':
         print("\nEncerrando o programa...")
@@ -42,4 +42,4 @@ while True:
         print("Categoria inválida. Por favor, escolha entre: educação, terapeutico, debate, profissionais, pais")
         continue
     
-    mostrar(filtrar_posts(categoria))
+    mostrar(filtrar_comunidade(categoria))
