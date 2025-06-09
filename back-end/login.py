@@ -10,7 +10,7 @@ def sistema_login():
     print("Bem-vindo ao sistema de login!")
 
     while True:
-        nome_usuario = input("Digite seu nome de usuário: ").lower() # Converte para minúsculas para case-insensitivity
+        nome_usuario = input("Digite seu nome de usuário: ").lower() # Converte para minúsculas
         senha = input("Digite sua senha: ")
 
         if nome_usuario in usuarios_cadastrados:
